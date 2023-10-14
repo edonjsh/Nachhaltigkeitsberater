@@ -1,0 +1,70 @@
+.user_side {
+    background-image: url("/images/inspiration/wallpaper_user_side.jpg");
+}
+
+.user_boxlist {
+    display: flex;
+    flex-direction: row;
+    background-color: goldenrod;
+    flex-wrap: wrap;
+    margin: 10px;
+    border-radius: 80px;
+    justify-content: center;
+}
+
+.user_box {
+    margin: 20px;
+}
+
+img {
+    border: 5px solid  brown;
+    width: 420px;
+}
+
+.user_no_image {
+    border: 5px;
+    background-color: white;
+    width: 420px;
+    height: 420px;
+    border: 5px solid  brown;
+}
+
+.user_quote_content {
+    font-style: italic;
+    font-size: medium;
+}
+
+.user_quote_author {
+    font-style: normal;
+    font-size: larg;
+    font-weight: bold;
+}
+
+.user_quote_comments {
+    margin-bottom: 100px;
+    font-style: oblique;
+}
+
+.user_quote_tag {
+    margin-top: 5px;  /* Abstand zu Datum*/
+    margin-bottom: 20px; /* Abstand zu Kommentare*/
+    font-size: small;
+}
+
+.user_quote_date {
+    font-size: large;
+    font-style: oblique;
+}
+
+ul {
+    list-style-type:upper-roman; /* Liste mit römischen Zahlen geändert*/
+}
+
+.user_caption {
+    font-size: 50px; /* Titel größer gemacht */
+}
+
+.user_box_header {
+    font-size: 40px; /* Bildüberschriften größer gemacht */
+    text-align: center;  /*Titel in die Mitte gemacht*/
+}

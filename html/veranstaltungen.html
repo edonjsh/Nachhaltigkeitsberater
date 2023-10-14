@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <title>Nachhaltigkeitsberater</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="language" content="de">
+  <meta name="author" content="Edon Jashari">
+  <meta name="date" content="2022-10-24T08:49:37+02:00">
+  <meta name="keywords" content="Nachhaltigkeit">
+  <meta name="description" content="Näher bringen der UN-definierten Nachhaltigkeitsziele">
+  <meta name="robots" content="index,follow">
+  <meta name="audience" content="alle">
+  <meta name="page-topic" content="Nachhaltigkeit, Aufrechterhaltbarkeit">
+  <meta name="revisit-after" content="1 day">
+  <link rel="icon" type="image/png" href="/images/Logo_favicon.png">
+
+
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="/css/default.css">
+
+  <script src="/js/veranstaltung.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img class="logo" src="/images/Logo_nachhaltigkeit.png" alt="Logo" height="100"
+            width="100"></a>
+
+        <!--in diesem HTML-Element soll das Logo als Bild-Element integriert werden-->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul id="nav_1" class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/html/index.html">Home</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/html/konzept.html" id="navbarDarkDropdownMenuLink"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">Konzept</a>
+              <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="/html/fakten.html">Fakten</a></li>
+                <li><a class="dropdown-item" href="/html/konzept.html#titel-definition">Was ist Nachhaltigkeit?</a></li>
+                <li><a class="dropdown-item" href="/html/konzept.html#agenda-2030">Agenda 2030</a></li>
+                <li><a class="dropdown-item" href="/html/konzept.html#deustchland-rolle">Wie hilft der deutsche
+                    Staat?</a></li>
+                <li><a class="dropdown-item" href="/html/konzept.html#konsequenzen">Probleme bei nicht Erreichung der
+                    Ziele</a></li>
+                <li><a class="dropdown-item" href="/html/konzept.html#warum-helfen">Warum DU helfen solltest</a></li>
+                <li><a class="dropdown-item" href="/html/konzept.html#infos">Mehr Informationen</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/html/aktuelles.html">Aktuelles</a></li>
+            <li class="nav-item"><a class="nav-link" href="/html/veranstaltungen.html">Veranstaltungen</a></li>
+            <li class="nav-item"><a class="nav-link" href="/html/infothek.html">Infothek</a></li>
+            <li class="nav-item"><a class="nav-link" href="/html/allerlei.html">Allerlei</a></li>
+          </ul>
+          <ul id="nav_2" class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/html/suche.html"><i class="bi bi-search"></i> Suche</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/html/meinKonto.html"><i class="bi bi-person-circle"></i>
+                mein Konto</a></li>
+            <li class="nav-item"><a class="nav-link" href="/html/kontakt.html"><i class="bi bi-envelope-fill"></i>
+                Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--Hier ist der Hauptteil der Webseite-->
+
+      <div class="card">
+        <div class="card-header">
+          <h5>Veranstaltung</h5>
+        </div>
+        <div class="card-body">
+          <form action="#">
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="name" name="name" tabindex="0" maxlength="40" required
+                autocomplete="on">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Veranstaltung</label>
+            <div class="col-sm-10">
+              <select multiple aria-label="multiple select example" required autocomplete="on" class="form-control">
+                <option value="kino" tabindex="1">Kino</option>
+                <option value="auftritt" tabindex="2">Auftritt</option>
+                <option value="zirkus" tabindex="3">Zirkus</option>
+                <option value="theater" tabindex="4">Theater</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Preiskategorie</label>
+            <div class="col-sm-10">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" tabindex="5" type="radio" name="Preiskategorie" id="kleinkind"
+                  value="kleinkind" required>
+                <label class="form-check-label">Kleinkind</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" tabindex="6" name="Preiskategorie" id="schüler"
+                  value="schüler" required>
+                <label class="form-check-label">Schüler</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" tabindex="6" name="Preiskategorie" id="student"
+                  value="student" required>
+                <label class="form-check-label">Student</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" tabindex="7" name="Preiskategorie" id="erwachsener"
+                  value="erwachsener" required>
+                <label class="form-check-label">Erwachsener</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" tabindex="8" name="Preiskategorie" id="rentner"
+                  value="rentner" required>
+                <label class="form-check-label">Rentner</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Zeitraum</label>
+            <div class="col-sm-10">
+              <input type="date" required name="zeitraum" onclick="heute()" id="zeitraum" tabindex="9" class="form-control"
+                autocomplete="on" />
+              <input type="time" required name="uhrzeitvon" onclick="heute()" id="uhrzeitvon" class="form-control" />bis
+              <input type="date" required name="zeitraumbis" onclick="heute()" id="zeitraumbis" class="form-control" />
+              <input type="time" required name="uhrzeitbis" onclick="heute()" id="uhrzeitbis" class="form-control" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="spende" class="col-sm-2 col-form-label">Spende</label>
+            <div class="col-sm-10">
+              <input type="number" name="spende" required id="spende" tabindex="10" class="form-control"
+                autocomplete="on" />
+            </div>
+          </div>
+
+          <<!-- Image Map Generated by http://www.image-map.net/ -->
+            <img src="https://www.theaterschiff-bremen.de/neu/wp-content/uploads/gro%C3%9Fer-saal.jpg"
+              usemap="#image-map">
+
+            <map name="image-map">
+              <area target="_top" title="Sitzplatz 55" href="" coords="159,232,149,218" shape="rect" onclick="sitzplatz()">
+              <area target="_top" title="" href="" coords="123,218,135,231" shape="rect" onclick="sitzplatz()">
+              <area target="_top" title="" href="" coords="99,220,111,231" shape="rect" onclick="sitzplatz()">
+              <area target="_top" title="" href="" coords="76,220,87,231" shape="rect" onclick="sitzplatz()">
+              <area target="_top" title="" href="" coords="63,221,52,231" shape="rect" onclick="sitzplatz()">
+              <area target="_top" title="" href="" coords="28,218,40,231" shape="rect" onclick="sitzplatz()">
+            </map>
+            <div class="form-group row">
+              <label for="sitzplatz" class="col-sm-2 col-form-label">Sitzplatz</label>
+              <div class="col-sm-10">
+                <input type="text" name="sitzplatz" required id="sitzplatz" class="form-control" autocomplete="on"
+                  readonly onclick="sitzplatz()">
+              </div>
+            </div>
+
+            <div class="modal" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Ihr Sitzplatz</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="https://fink.hamburg/wp/wp-content/uploads/2019/10/Astor-Kino-Filmfest-Hamburg-2019.jpg"
+                      alt="Sitzplatz">
+                    <p>Wollen Sie Ihren Sitzplatz behalten?</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" id="freigeben" class="btn btn-secondary"
+                      data-dismiss="modal">Freigeben</button>
+                    <button type="button" id="behalten" class="btn btn-primary">OK</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group row">
+
+              <label class="col-sm-2 col-form-label">Bezahloption</label>
+              <div class="col-sm-10">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="zahlart" id="rechnung" value="rechnung" required onclick="rechnung()">
+                  <label class="form-check-label"><i class="fas fa-file-invoice-dollar"></i>Rechnung</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="zahlart" id="karte" value="karte" required onclick="kartenzahlung()">
+                  <label class="form-check-label"><i class="fab fa-cc-mastercard"></i>Kartenzahlung</label>
+                </div>
+              </div>
+
+            </div>
+            <div class="card" id="zahlartRechnung">
+              <div class="card-header">
+                <h5>Rechnung</h5>
+              </div>
+              <div class="toggle">
+                <div class="card-body">
+                  <fieldset id="bezahlung">
+                    <div class="form-group">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="lieferurechnungsadresse"
+                          id="gleichlieferadresse" value="gleichlieferadresse" required>
+                        <label class="form-check-label">Rechnungsadresse gleich
+                          Lieferadresse</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="lieferurechnungsadresse"
+                          id="abweichenderempfänger" value="abweichenderempfänger" required>
+                        <label class="form-check-label">Abweichender
+                          Rechnungsempfänger</label>
+                      </div>
+                      <div class="form-group row">
+                        <label for="adresse" class="col-sm-2 col-form-label">Straße und Hausnummer*</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="adresse" name="adresse" maxlength="40"
+                            autocomplete="on">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="plz" class="col-sm-2 col-form-label">Postleitzahl*</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="plz" name="plz" maxlength="10" autocomplete="on"
+                            pattern="^[0-9]{5}$">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="ort" class="col-sm-2 col-form-label">Ort*</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="ort" name="ort" maxlength="40" autocomplete="on"
+                            list="ortliste" required>
+                          <datalist id="ortliste">
+                            <option value="Freiburg"></option>
+                            <option value="Stuttgart"></option>
+                            <option value="Frankfurt"></option>
+                            <option value="Berlin"></option>
+                            <option value="München"></option>
+                          </datalist>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="land" class="col-sm-2 col-form-label">Land*</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="land" name="land" autocomplete="on"
+                            list="landliste" required>
+                          <datalist id="landliste">
+                            <option value="Deutschland" selected>Deutschland</option>
+                            <option value="Schweiz"></option>
+                            <option value="Österreich"></option>
+                            <option value="Frankreich"></option>
+                            <option value="Schweden"></option>
+                          </datalist>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="zahlartKarte">
+              <div class="card-header">
+                <h5>Kartenzahlung</h5>
+              </div>
+              <div class="toggle">
+                <div class="card-body">
+                  <fieldset class="bezahlung">
+                    <div class="row mb-3">
+                      <label for="karteninhaber" class="col-sm-2 col-form-label">Karteninhaber*</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="karteninhaber" name="karteninhaber" maxlength="100"
+                          autocomplete="on" required>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="kartennummer" class="col-sm-2 col-form-label">Kartennummer*</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="kartennummer" name="kartennummer" autocomplete="on"
+                          required>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="prüfziffer" class="col-sm-2 col-form-label">Prüfziffer*</label>
+                      <div class="col-sm-10">
+                        <input type="password" class="form-control" id="prüfziffer" name="prüfziffer" autocomplete="on"
+                          required pattern="[0-9]{3}">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="monatundjahr" class="col-sm-2 col-form-label">Monat und Jahr für Gültigkeits-
+                        dauer*</label>
+                      <div class="col-sm-10">
+                        Monat: <input type="number" id="monatundjahr" min="1" max="12" step="1" required
+                          autocomplete="on" />
+                        Jahr: <input type="number" min="2020" id="gueltigkeitjahr" max="2035" step="1" required
+                          autocomplete="on" />
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+            <button type="submit" id="registrationsubmit" class="btn btn-success">Absenden</button>
+            <button type="reset" class="btn btn-success">Reset</button>
+          </form>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      <nav id="nav_3">
+        <!-- Inhalte nicht als Listen-Elemente und nicht der Klasse nav-link zuordnen (Achtung bei Copy&Paste), nur Aneinanderreihung von Link-Elementen -->
+        <p>&#169; 2022 |
+          <a href="/html/impressum.html">Impressum</a> |
+          <a href="/html/datenschutz.html">Datenschutz</a> |
+          <a href="/html/erklaerungBF.html">Erklärung für Barrierefreiheit</a>
+        </p>
+      </nav>
+    </footer>
+  </div>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

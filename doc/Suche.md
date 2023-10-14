@@ -1,0 +1,2 @@
+Ziel: Suchmögöglichkeit
+Inhalt: Suchleiste
