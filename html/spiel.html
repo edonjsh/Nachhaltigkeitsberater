@@ -70,7 +70,6 @@
             function checkGuess() {
                 const userGuess = parseInt(guessInput.value);
                 tries++;
-
                 if (userGuess === randomNumber) {
                     message.innerHTML = `Glückwunsch! Du hast die Zahl ${randomNumber} in ${tries} Versuchen erraten.`;
                     message.style.color = '#000071';
@@ -79,9 +78,12 @@
                 } else if (userGuess < randomNumber) {
                     message.innerHTML = 'Höhere Zahl.<br>';
                     message.style.color = '#e0972f';
-                } else {
+                } else if (userGuess > randomNumber){
                     message.innerHTML = 'Niedrigere Zahl.<br>';
                     message.style.color = '#b9d651';
+                } else{
+                    message.innerHTML = 'Gebe eine Zahl ein.<br>';
+                    message.style.color = '#000011';
                 }
 
                 guessInput.value = '';
